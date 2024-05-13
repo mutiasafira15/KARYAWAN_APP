@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KARYAWAN APP</title>
+
+    <link rel="stylesheet" href="~/css/all.min.css">
+    <link rel="stylesheet" href="~/lib/AdminLTE-master/dist/css/adminlte.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/lib/AdminLTE-master/plugins/fontawesome-free/css/all.min.css">
+
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/bootstrap.bundle.min.js"></script>
+    <script src="~/jquery.dataTables.js"></script>
+
+
+    <!-- AdminLTE App -->
+    <script src="~/lib/AdminLTE-master/dist/js/adminlte.min.js"></script>
+    <script src="~/lib/demo.js"></script>
+    <script src="~/lib/rowsGroup.js"></script>
+
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader flex-column justify-content-center align-items-center">
+            <img class="animation__shake" src="~/uploads/CORE-X.png" alt="CORE-XLogo" height="150" width="150">
+        </div>
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav" style="font-weight:bold">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+                        <i class="fas fa-th-large"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="#" class="brand-link">
+                <img src="~/img/logo_white.png" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8; margin-top:1px">
+
+                <span class="brand-text font-weight-light" style="margin-top:0px">
+                    @*<img src="~/img/logo_white.png" alt="Collins Aerospace" style="opacity: .8" width="150">*@
+                    <strong>LOGO BRAND</strong>
+                </span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-1 pb-1 mb-1 d-flex">
+                    <div class="info" style="width:100%; text-align:center">
+                        <a href="/CCR/CCR_HomePage" class="brand-text font-weight-bolder">
+                            KARYAWAN APP
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+                             with font-awesome or any other icon font library -->
+                        <li class="nav-item menu-open">
+                        <li class="nav-header">MENU</li>
+                        <li class="nav-item">
+                            <a href="/Home/Update_Biodata" class="nav-link">
+                                <i class="nav-icon fas fa-columns"></i>
+                                <p>
+                                    Create New Biodata
+                                </p>
+                            </a>
+                        </li>
+                        @if(ViewBag.status == "admin")
+                        {
+                        <li class="nav-item">
+                            <a href="/Home/List_Biodata" class="nav-link">
+                                <i class="nav-icon far fa-calendar-alt"></i>
+                                <p>
+                                    List Biodata
+                                </p>
+                            </a>
+                        </li>
+                        }
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <div class="container-fluid">
+
+                    @RenderBody()
+
+                </div><!-- /.container-fluid -->
+            </section>
+
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <strong>Bandung</strong>
+            <div class="float-right d-none d-sm-inline-block">
+                made with ❤ by Mutia Safira
+            </div>
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

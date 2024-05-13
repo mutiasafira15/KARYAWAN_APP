@@ -1,0 +1,155 @@
+﻿@model IEnumerable<KaryawanApp.Models.Data_Karyawan>
+
+@{
+    Layout = "_LayoutApp";
+}
+
+<h1>List_Biodata</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.KRY_USER_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KRY_PDK_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KRY_POSISI_DILAMAR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KRY_NAMA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KRY_NO_KTP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KRY_TEMPAT_LAHIR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KRY_TANGGAL_LAHIR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KRY_JENIS_KELAMIN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KRY_AGAMA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KRY_GOL_DARAH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KRY_STATUS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KRY_ALAMAT_KTP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KRY_EMAIL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KRY_NO_TELP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KRY_NAMA_YANG_DAPAT_DIHUB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KRY_NO_YANG_DAPAT_DIHUB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KRY_PLT_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KRY_PKJ_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KRY_SKILL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KRY_SEDIA_PENEMPATAN_DIMANAPUN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KRY_EKSPEKTASI_SALARY)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRY_USER_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRY_PDK_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRY_POSISI_DILAMAR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRY_NAMA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRY_NO_KTP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRY_TEMPAT_LAHIR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRY_TANGGAL_LAHIR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRY_JENIS_KELAMIN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRY_AGAMA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRY_GOL_DARAH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRY_STATUS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRY_ALAMAT_KTP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRY_EMAIL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRY_NO_TELP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRY_NAMA_YANG_DAPAT_DIHUB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRY_NO_YANG_DAPAT_DIHUB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRY_PLT_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRY_PKJ_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRY_SKILL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRY_SEDIA_PENEMPATAN_DIMANAPUN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRY_EKSPEKTASI_SALARY)
+            </td>
+            <td>
+                <a asp-action="Update_Biodata" asp-route-id="@item.KRY_ID">Edit</a> |
+                <a asp-action="Detail_Biodata" asp-route-id="@item.KRY_ID">Details</a> |
+                <a asp-action="Delete_Biodata" asp-route-id="@item.KRY_ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

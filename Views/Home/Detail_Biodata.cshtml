@@ -1,0 +1,144 @@
+﻿@model KaryawanApp.Models.Data_Karyawan
+
+@{
+    Layout = "_LayoutApp";
+}
+
+<h1>Detail_Biodata</h1>
+
+<div>
+    <h4>Data_Karyawan</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KRY_USER_ID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KRY_USER_ID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KRY_PDK_ID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KRY_PDK_ID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KRY_POSISI_DILAMAR)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KRY_POSISI_DILAMAR)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KRY_NAMA)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KRY_NAMA)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KRY_NO_KTP)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KRY_NO_KTP)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KRY_TEMPAT_LAHIR)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KRY_TEMPAT_LAHIR)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KRY_TANGGAL_LAHIR)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KRY_TANGGAL_LAHIR)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KRY_JENIS_KELAMIN)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KRY_JENIS_KELAMIN)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KRY_AGAMA)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KRY_AGAMA)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KRY_GOL_DARAH)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KRY_GOL_DARAH)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KRY_STATUS)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KRY_STATUS)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KRY_ALAMAT_KTP)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KRY_ALAMAT_KTP)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KRY_EMAIL)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KRY_EMAIL)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KRY_NO_TELP)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KRY_NO_TELP)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KRY_NAMA_YANG_DAPAT_DIHUB)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KRY_NAMA_YANG_DAPAT_DIHUB)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KRY_NO_YANG_DAPAT_DIHUB)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KRY_NO_YANG_DAPAT_DIHUB)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KRY_PLT_ID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KRY_PLT_ID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KRY_PKJ_ID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KRY_PKJ_ID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KRY_SKILL)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KRY_SKILL)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KRY_SEDIA_PENEMPATAN_DIMANAPUN)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KRY_SEDIA_PENEMPATAN_DIMANAPUN)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KRY_EKSPEKTASI_SALARY)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KRY_EKSPEKTASI_SALARY)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.KRY_ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

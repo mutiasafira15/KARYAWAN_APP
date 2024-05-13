@@ -1,0 +1,133 @@
+﻿@model KaryawanApp.Models.Data_Karyawan
+
+@{
+    Layout = "_LayoutApp";
+}
+
+<h1>Create Biodata</h1>
+
+<h4>Calon Karyawan</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Update_Biodata" method="post" asp-route-id="@Model.KRY_ID" asp-controller="Home">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="KRY_USER_ID" class="control-label"></label>
+                <input asp-for="KRY_USER_ID" class="form-control" />
+                <span asp-validation-for="KRY_USER_ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KRY_PDK_ID" class="control-label"></label>
+                <input asp-for="KRY_PDK_ID" class="form-control" />
+                <span asp-validation-for="KRY_PDK_ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KRY_POSISI_DILAMAR" class="control-label"></label>
+                <input asp-for="KRY_POSISI_DILAMAR" class="form-control" />
+                <span asp-validation-for="KRY_POSISI_DILAMAR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KRY_NAMA" class="control-label"></label>
+                <input asp-for="KRY_NAMA" class="form-control" />
+                <span asp-validation-for="KRY_NAMA" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KRY_NO_KTP" class="control-label"></label>
+                <input asp-for="KRY_NO_KTP" class="form-control" />
+                <span asp-validation-for="KRY_NO_KTP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KRY_TEMPAT_LAHIR" class="control-label"></label>
+                <input asp-for="KRY_TEMPAT_LAHIR" class="form-control" />
+                <span asp-validation-for="KRY_TEMPAT_LAHIR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KRY_TANGGAL_LAHIR" class="control-label"></label>
+                <input asp-for="KRY_TANGGAL_LAHIR" class="form-control" />
+                <span asp-validation-for="KRY_TANGGAL_LAHIR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KRY_JENIS_KELAMIN" class="control-label"></label>
+                <input asp-for="KRY_JENIS_KELAMIN" class="form-control" />
+                <span asp-validation-for="KRY_JENIS_KELAMIN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KRY_AGAMA" class="control-label"></label>
+                <input asp-for="KRY_AGAMA" class="form-control" />
+                <span asp-validation-for="KRY_AGAMA" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KRY_GOL_DARAH" class="control-label"></label>
+                <input asp-for="KRY_GOL_DARAH" class="form-control" />
+                <span asp-validation-for="KRY_GOL_DARAH" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KRY_STATUS" class="control-label"></label>
+                <input asp-for="KRY_STATUS" class="form-control" />
+                <span asp-validation-for="KRY_STATUS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KRY_ALAMAT_KTP" class="control-label"></label>
+                <input asp-for="KRY_ALAMAT_KTP" class="form-control" />
+                <span asp-validation-for="KRY_ALAMAT_KTP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KRY_EMAIL" class="control-label"></label>
+                <input asp-for="KRY_EMAIL" class="form-control" />
+                <span asp-validation-for="KRY_EMAIL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KRY_NO_TELP" class="control-label"></label>
+                <input asp-for="KRY_NO_TELP" class="form-control" />
+                <span asp-validation-for="KRY_NO_TELP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KRY_NAMA_YANG_DAPAT_DIHUB" class="control-label"></label>
+                <input asp-for="KRY_NAMA_YANG_DAPAT_DIHUB" class="form-control" />
+                <span asp-validation-for="KRY_NAMA_YANG_DAPAT_DIHUB" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KRY_NO_YANG_DAPAT_DIHUB" class="control-label"></label>
+                <input asp-for="KRY_NO_YANG_DAPAT_DIHUB" class="form-control" />
+                <span asp-validation-for="KRY_NO_YANG_DAPAT_DIHUB" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KRY_PLT_ID" class="control-label"></label>
+                <input asp-for="KRY_PLT_ID" class="form-control" />
+                <span asp-validation-for="KRY_PLT_ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KRY_PKJ_ID" class="control-label"></label>
+                <input asp-for="KRY_PKJ_ID" class="form-control" />
+                <span asp-validation-for="KRY_PKJ_ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KRY_SKILL" class="control-label"></label>
+                <input asp-for="KRY_SKILL" class="form-control" />
+                <span asp-validation-for="KRY_SKILL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KRY_SEDIA_PENEMPATAN_DIMANAPUN" class="control-label"></label>
+                <input asp-for="KRY_SEDIA_PENEMPATAN_DIMANAPUN" class="form-control" />
+                <span asp-validation-for="KRY_SEDIA_PENEMPATAN_DIMANAPUN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KRY_EKSPEKTASI_SALARY" class="control-label"></label>
+                <input asp-for="KRY_EKSPEKTASI_SALARY" class="form-control" />
+                <span asp-validation-for="KRY_EKSPEKTASI_SALARY" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Homepage">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

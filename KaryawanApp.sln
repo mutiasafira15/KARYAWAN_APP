@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KaryawanApp", "KaryawanApp.csproj", "{9D32E4BE-DB81-4BA7-B2C2-55F252899C1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E3812AFF-02D3-4E95-83E9-D1AEAC1F02BA}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D32E4BE-DB81-4BA7-B2C2-55F252899C1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D32E4BE-DB81-4BA7-B2C2-55F252899C1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D32E4BE-DB81-4BA7-B2C2-55F252899C1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D32E4BE-DB81-4BA7-B2C2-55F252899C1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5061BE30-979A-4B7B-939D-D16F561A20F2}
+	EndGlobalSection
+EndGlobal
