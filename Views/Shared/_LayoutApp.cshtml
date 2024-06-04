@@ -27,7 +27,7 @@
 
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="~/uploads/CORE-X.png" alt="CORE-XLogo" height="150" width="150">
+            <img class="animation__shake" src="~/img/effective_employees_users_team_group_icon_152042.png" alt="KaryawanApp" height="150" width="150">
         </div>
 
         <!-- Navbar -->
@@ -98,7 +98,10 @@
                                 </p>
                             </a>
                         </li>
-                        @if(ViewBag.status == "admin")
+                        
+                        @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+                        @if(HttpContextAccessor.HttpContext.Session.GetString("UserRole") == "True")
                         {
                         <li class="nav-item">
                             <a href="/Home/List_Biodata" class="nav-link">

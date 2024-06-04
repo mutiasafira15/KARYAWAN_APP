@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/O5xpLGHHqnQ0mwRYzfkIJ0a7XTfM7e4NlAC1gTjxRA=",
+  "Hash": "mZoUGhIgH+a8eUlWXigcsaZvP+JPesKLES7ZJe5gMuY=",
   "Source": "KaryawanApp",
   "BasePath": "_content/KaryawanApp",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\E40061979\\source\\repos\\KaryawanApp\\wwwroot\\img\\effective_employees_users_team_group_icon_152042.png",
+      "SourceId": "KaryawanApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\E40061979\\source\\repos\\KaryawanApp\\wwwroot\\",
+      "BasePath": "_content/KaryawanApp",
+      "RelativePath": "img/effective_employees_users_team_group_icon_152042.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\effective_employees_users_team_group_icon_152042.png"
     },
     {
       "Identity": "C:\\Users\\E40061979\\source\\repos\\KaryawanApp\\wwwroot\\img\\logo_white.png",

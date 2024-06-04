@@ -65,27 +65,27 @@ namespace KaryawanApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(string USR_EMAIL, string USR_PASS, bool USR_ADMIN)
+        public IActionResult Login(string USR_EMAIL, string USR_PASS)
         {
-            Data_User data = _db.Data_Users.Where(x => x.USR_EMAIL == USR_EMAIL && x.USR_PASS == USR_PASS).FirstOrDefault();
-            if(data == null)
+            Data_User data = _db.Data_Users.FirstOrDefault(x => x.USR_EMAIL == USR_EMAIL && x.USR_PASS == USR_PASS);
+            if (data == null)
             {
                 ModelState.AddModelError(string.Empty, "Email dan password tidak terdaftar.");
                 return View();
             }
-            else
-            {
-                if(data.USR_ADMIN == true)
-                {
-                    ViewBag.status = "admin";
-                    return View("Homepage");
-                }
-                else
-                {
-                    ViewBag.status = "bukan admin";
-                    return View("Homepage");
-                }
-            }
+
+            // Set session values
+            HttpContext.Session.SetString("UserRole", (bool)data.USR_ADMIN ? "True" : "False");
+
+            return RedirectToAction("Homepage", "Home");
+        }
+
+        [HttpPost]
+        public IActionResult Logout()
+        {
+            // Clear the session
+            HttpContext.Session.Clear();
+            return RedirectToAction("Login", "Account");
         }
 
         // Controller Homepage
